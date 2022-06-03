@@ -9,7 +9,6 @@ class App extends Component{
     lon: undefined,
     city: undefined,
     tempC: undefined,
-    tempF: undefined,
     errorMsg: undefined,
     season:undefined,
 
@@ -30,7 +29,6 @@ lat:latitide,
 lon:longitude,
 city:data.name,
 tempC:Math.round(data.main.temp),
-tempF:Math.round(data.main.temp * 9/5 + 32),
 humidity:data.main.humidity,
 main:data.weather[0].main,
 })
@@ -67,7 +65,7 @@ getSeason = (season) => {
 }
 
 render() {
-  const {city, tempC, tempF,  humidity, main, season, errorMsg} = this.state;
+  const {city, tempC,   humidity, main, season, errorMsg} = this.state;
   if(city) {
     return (
       <div className="App">
