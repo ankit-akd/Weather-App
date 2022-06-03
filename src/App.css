@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.weather-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  color: white;
+  width: 20rem;
+  height: 23rem;
+  border-radius: 4rem;
+  margin: 10rem auto 0 auto;
+}
+
+.weather-item{
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: white;
+}
